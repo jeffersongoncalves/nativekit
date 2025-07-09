@@ -125,7 +125,7 @@ The `config/nativekit.php` file centralizes the configuration of the starter kit
 
 ## Resources
 
-Nativekit includes support for:
+NativeKit includes support for:
 
 - User and admin management
 - Multi-guard authentication system
