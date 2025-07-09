@@ -17,16 +17,16 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        if (config('filakit.admin_panel_enabled', false)) {
+        if (config('nativekit.admin_panel_enabled', false)) {
             $this->app->register(AdminPanelProvider::class);
         }
-        if (config('filakit.app_panel_enabled', false)) {
+        if (config('nativekit.app_panel_enabled', false)) {
             $this->app->register(AppPanelProvider::class);
         }
-        if (config('filakit.guest_panel_enabled', false)) {
+        if (config('nativekit.guest_panel_enabled', false)) {
             $this->app->register(GuestPanelProvider::class);
         }
-        if (config('filakit.favicon.enabled')) {
+        if (config('nativekit.favicon.enabled')) {
             FilamentView::registerRenderHook(PanelsRenderHook::HEAD_START, fn (): View => view('components.favicon'));
         }
         FilamentView::registerRenderHook(PanelsRenderHook::HEAD_START, fn (): View => view('components.js-md5'));
