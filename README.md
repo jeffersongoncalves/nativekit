@@ -89,11 +89,10 @@ Nativekit comes pre-configured with a custom authentication system that supports
 
 ``` bash
 # Run the development server with logs, queues and asset compilation
-composer dev
+composer native:dev
 
 # Or run each component separately
 php artisan native:serve
-php artisan queue:listen --tries=1
 pnpm run dev
 ```
 
