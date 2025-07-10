@@ -35,7 +35,7 @@ class AdminPanelProvider extends PanelProvider
                 'primary' => Color::Amber,
             ])
             ->brandLogo(fn () => Vite::asset(config('nativekit.favicon.logo')))
-            ->brandLogoHeight(fn () => request()->is('admin/login', 'admin/password-reset/*') ? '121px' : '50px')
+            ->brandLogoHeight(fn () => request()->is('admin/login', 'admin/password-reset/*') ? '91px' : '50px')
             ->viteTheme('resources/css/filament/admin/theme.css')
             ->defaultThemeMode(config('nativekit.theme_mode', ThemeMode::Dark))
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
