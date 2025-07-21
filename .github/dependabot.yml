@@ -2,13 +2,20 @@
 
 version: 2
 
+registries:
+  composer-nativephp-composer-sh:
+    type: composer-repository
+    url: https://nativephp.composer.sh
+    username: ${{secrets.NATIVEPHP_USERNAME}}
+    password: ${{secrets.NATIVEPHP_PASSWORD}}
+
 updates:
 
   # Maintain dependencies for GitHub Actions
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "daily"
     groups:
       actions-deps:
         patterns:
@@ -20,7 +27,7 @@ updates:
     ignore:
       - dependency-name: "tailwindcss"
     schedule:
-      interval: "weekly"
+      interval: "daily"
     groups:
       actions-deps:
         patterns:
@@ -29,8 +36,10 @@ updates:
   # Maintain dependencies for Composer
   - package-ecosystem: "composer"
     directory: "/"
+    registries:
+      - composer-nativephp-composer-sh
     schedule:
-      interval: "weekly"
+      interval: "daily"
     groups:
       actions-deps:
         patterns:
