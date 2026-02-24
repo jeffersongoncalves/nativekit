@@ -35,6 +35,16 @@ Clone the repository
 laravel new my-app --using=jeffersongoncalves/nativekit
 ```
 
+### Using FilaKit CLI
+
+Or use [FilaKit CLI](https://github.com/jeffersongoncalves/filakit-cli) for a simplified setup:
+
+```bash
+filakit new my-app --kit=jeffersongoncalves/nativekit
+```
+
+> Install FilaKit CLI: `composer global require jeffersongoncalves/filakit-cli`
+
 ###  Easy Installation
 
 Nativekit can be easily installed using the following command:
