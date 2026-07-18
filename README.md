@@ -4,16 +4,16 @@
 
 </div>
 
-# NativeKit Start Kit NativePHP 1.x, Filament 3.x and Laravel 12.x
+# NativeKit Start Kit NativePHP 1.x, Filament 3.x and Laravel 13.x
 
 ## About NativeKit
 
-NativeKit is a robust starter kit built on Laravel 12.x, Filament 3.x and NativePHP 1.x, designed to accelerate the development of modern
+NativeKit is a robust starter kit built on Laravel 13.x, Filament 3.x and NativePHP 1.x, designed to accelerate the development of modern
 native desktop applications with a ready-to-use multi-panel structure.
 
 ## Features
 
-- **Laravel 12.x** - The latest version of the most elegant PHP framework
+- **Laravel 13.x** - The latest version of the most elegant PHP framework
 - **Filament 3.x** - Powerful and flexible admin framework
 - **NativePHP 1.x** - Build native desktop applications with PHP
 - **Multi-Panel Structure** - Includes three pre-configured panels:
@@ -24,7 +24,7 @@ native desktop applications with a ready-to-use multi-panel structure.
 
 ## System Requirements
 
-- PHP 8.2 or higher
+- PHP 8.3 or higher
 - Composer
 - Node.js and PNPM
 
