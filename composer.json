@@ -22,6 +22,7 @@
         "php": "^8.3",
         "dutchcodingcompany/filament-developer-logins": "^1.10",
         "filament/filament": "^3.3",
+        "guzzlehttp/guzzle": "^7.15.1",
         "jeffersongoncalves/filament-additional-information": "^1.0",
         "jeffersongoncalves/filament-sensible-defaults": "^1.0",
         "laravel/framework": "^13.0",
